@@ -1,0 +1,5 @@
+#start etcd
+/usr/local/bin/run-etcd --discovery $DISCOVERY >> /var/log/etcd.log 2>&1 
+
+#start chunkserver
+/usr/sbin/mfscgiserv -f start ;
